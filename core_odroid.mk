@@ -405,3 +405,31 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     hardware/interfaces/gnss/1.0/default/android.hardware.gnss@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@1.0-service.rc
+
+# Input device calibration files
+PRODUCT_COPY_FILES += \
+    device/hardkernel/common/common/keyboard_layout/odroid-ts.idc:vendor/usr/idc/odroid-ts.idc \
+    device/hardkernel/common/common/keyboard_layout/odroid-ts.idc:vendor/usr/idc/usbio-keypad.idc \
+    device/hardkernel/common/common/keyboard_layout/odroid-ts.kl:vendor/usr/keylayout/odroid-ts.kl \
+    device/hardkernel/common/common/keyboard_layout/odroid-ts.kcm:vendor/usr/keylayout/odroid-ts.kcm \
+    device/hardkernel/common/common/keyboard_layout/odroid-keypad.kl:vendor/usr/keylayout/odroid-keypad.kl \
+    device/hardkernel/common/common/keyboard_layout/odroid-keypad.kcm:vendor/usr/keychars/odroid-keypad.kcm
+
+# for USB HID MULTITOUCH
+PRODUCT_COPY_FILES += \
+    device/hardkernel/common/common/keyboard_layout/Vendor_0eef_Product_0005.idc:vendor/usr/idc/Vendor_0eef_Product_0005.idc \
+    device/hardkernel/common/common/keyboard_layout/Vendor_03fc_Product_05d8.idc:vendor/usr/idc/Vendor_03fc_Product_05d8.idc \
+    device/hardkernel/common/common/keyboard_layout/Vendor_1870_Product_0119.idc:vendor/usr/idc/Vendor_1870_Product_0119.idc \
+    device/hardkernel/common/common/keyboard_layout/Vendor_1870_Product_0100.idc:vendor/usr/idc/Vendor_1870_Product_0100.idc \
+    device/hardkernel/common/common/keyboard_layout/Vendor_2808_Product_81c9.idc:vendor/usr/idc/Vendor_2808_Product_81c9.idc \
+    device/hardkernel/common/common/keyboard_layout/Vendor_16b4_Product_0704.idc:vendor/usr/idc/Vendor_16b4_Product_0704.idc \
+    device/hardkernel/common/common/keyboard_layout/Vendor_16b4_Product_0705.idc:vendor/usr/idc/Vendor_16b4_Product_0705.idc \
+    device/hardkernel/common/common/keyboard_layout/Vendor_04d8_Product_0c03.idc:vendor/usr/idc/Vendor_04d8_Product_0c03.idc
+
+# XBox 360 Controller kl keymaps
+PRODUCT_COPY_FILES += \
+    device/hardkernel/common/common/keyboard_layout/Vendor_045e_Product_0291.kl:vendor/usr/keylayout/Vendor_045e_Product_0291.kl \
+    device/hardkernel/common/common/keyboard_layout/Vendor_045e_Product_0719.kl:vendor/usr/keylayout/Vendor_045e_Product_0719.kl \
+    device/hardkernel/common/common/keyboard_layout/Vendor_0c45_Product_1109.kl:vendor/usr/keylayout/Vendor_0c45_Product_1109 \
+    device/hardkernel/common/common/keyboard_layout/Vendor_1b8e_Product_0cec_Version_0001.kl:vendor/usr/keylayout/Vendor_1b8e_Product_0cec_Version_0001 \
+    device/hardkernel/common/common/keyboard_layout/Vendor_045e_Product_0719.kcm:vendor/usr/keychars/Vendor_045e_Product_0719.kcm
