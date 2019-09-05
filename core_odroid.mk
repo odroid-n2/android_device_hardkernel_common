@@ -32,6 +32,7 @@ PRODUCT_PACKAGES += \
     VisualizationWallpapers
 
 PRODUCT_PACKAGES += \
+    audio.primary.default \
     audio_policy.default \
     audio.dia_remote.default
 
@@ -445,3 +446,7 @@ PRODUCT_COPY_FILES += \
     device/hardkernel/common/common/keyboard_layout/Vendor_0c45_Product_1109.kl:vendor/usr/keylayout/Vendor_0c45_Product_1109 \
     device/hardkernel/common/common/keyboard_layout/Vendor_1b8e_Product_0cec_Version_0001.kl:vendor/usr/keylayout/Vendor_1b8e_Product_0cec_Version_0001 \
     device/hardkernel/common/common/keyboard_layout/Vendor_045e_Product_0719.kcm:vendor/usr/keychars/Vendor_045e_Product_0719.kcm
+
+#public library txt
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
